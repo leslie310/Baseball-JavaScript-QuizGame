@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Game</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+
+<body>  
+    <header>
+      <h1>Baseball Quiz Game</h1>
+        <p>In the following you will be given multiple choice and will need to answer within the time limit. Right answers are worth 5 points and wrong answers will decrease your score by 3 points and your time by 5 seconds. GOODLUCK!
+        </p>
+        <button class="button" id="startButton">Start</button>
+        <br>
+        <button class="button" id="resetButton">Reset</button>
+    </header>
+    <main>
+        <section id="question-section">
+            <h2 id="questionDisplay">Questions</h2>
+        </section>
+        <section class="hide" id="flexContainer">
+            <div class="answers">
+            <button class="buttons" id = "button1"> A</button>
+            <button class="buttons" id = "button2"> B</button>
+            <button class="buttons" id = "button3"> C</button>
+            <button class="buttons" id = "button4"> D</button>
+            </div>
+        </section>
+
+        <section class="hide" id="timeBox">
+            <div>
+                <h2><span id="timeRemaining">Incorrect answers = 5 seconds off the clock</span></h2>
+                <h3 id = "validAnswer">Start Quiz to begin.</h3>    
+            </div>
+        </section>
+        <section class="hide" id="results">
+        <p>Score:<span id="winSpan">0</span> </p>
+        </section>
+    </main>
+
+    <script src="./script.js"></script>
+</body>
+</html>
